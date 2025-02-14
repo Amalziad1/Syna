@@ -32,5 +32,6 @@ Deaf AI uses machine learning to provide real-time sign language recognition and
 4. Speech Output Using Whisper-like AI for Real-time Speech Translation
 5. Supports both Arabic and English sign languages
 6. Emotion Recognition and Context Awareness
+7. Supports real-time and uploaded image/video inputs
 
 ## Roadmap:
