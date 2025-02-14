@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Communication App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #008080;
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            background: #66b2b2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hidden {
+            display: none;
+        }
+        .button {
+            background: #800000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background: #600000;
+        }
+        .icon {
+            font-size: 40px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            background: none;
+        }
+        .textarea-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: none;
+            font-size: 14px;
+            resize: none;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        #audio{
+            font-size: 24px;
+        }
+        h1,h2,h3{
+            color: #004c4c;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1" class="container">
+        <h1>-- Syna AI --</h1>
+        <button class="icon" onclick="captureVideo()">📷</button>
+        <input type="file" id="videoInput" accept="video/*" onchange="displayVideo(event)">
+        <video id="videoPreview" controls class="hidden"></video>
+        <button class="button" onclick="goToPage2()">Submit</button>
+    </div>
+    
+    <div id="page2" class="container hidden">
+        <h3>Syna Says</h3>
+        <p id="aiText" style="color: azure;">Thank you!<span class="icon" onclick="speakText()" id="audio">🔊</span></p>
+        <hr>
+        <h3>Enter what do you want to say</h3>
+        <div class="textarea-container">
+            <textarea id="userInput" placeholder="Type here..."></textarea>
+            <span class="icon" onclick="startListening()">🎤</span>
+        </div>
+        <div class="nav-buttons">
+            <button class="button" onclick="goToPage1()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goToPage2() {
+            let videoInput = document.getElementById('videoInput');
+            if (!videoInput.files.length) {
+                alert("Please upload a video before proceeding.");
+                return;
+            }
+            document.getElementById('page1').classList.add('hidden');
+            document.getElementById('page2').classList.remove('hidden');
+        }
+        
+        function goToPage1() {
+            document.getElementById('page2').classList.add('hidden');
+            document.getElementById('page1').classList.remove('hidden');
+        }
+        
+        function speakText() {
+            let text=null;
+            text = document.getElementById('aiText').childNodes[0].nodeValue.trim();
+            let speech = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(speech);
+        }
+        
+        function startListening() {
+            if (!("webkitSpeechRecognition" in window || "SpeechRecognition" in window)) {
+                alert("Speech recognition is not supported in this browser. Please use Chrome or Edge.");
+                return;
+            }
+
+            let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.start();
+            
+            recognition.onresult = function(event) {
+                document.getElementById('userInput').value = event.results[0][0].transcript;
+            };
+            
+            recognition.onerror = function(event) {
+                console.error("Speech recognition error:", event.error);
+            };
+        }
+        
+        function displayVideo(event) {
+            let file = event.target.files[0];
+            if (file) {
+                let url = URL.createObjectURL(file);
+                let videoElement = document.getElementById('videoPreview');
+                videoElement.src = url;
+                videoElement.classList.remove('hidden');
+            }
+        }
+        
+        function captureVideo() {
+            alert("Camera capture feature not implemented yet.");
+        }
+    </script>
+</body>
+</html>
