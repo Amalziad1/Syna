@@ -2,9 +2,8 @@
 Your second friend that will help you communicate with your deaf friend, which uses AI to translate sign language that is enhanced by decentralized Web3 technologies for smooth communication in both English and Arabic languages.
 
 ## Team
-Amal AbuHmoud
-
-Zainab Shaabneh
+- Amal AbuHmoud
+- Zainab Shaabneh
 
 ## Description
 As most communities consist of people with disablities, especially with deaf individuals, who can't hear or talk. While they use sign language to communicate with people, many can't understand them, and even if normal people learnt sign language, they may not understand deaf people's gestures, their ideas, and thoughts. This is our main problem and we want to study it by invloving AI model and application that will help both sides (deaf and normal persons). 
