@@ -20,5 +20,18 @@ Based on blockchain smart contracts, Syna manages AI tasks and ensures transpare
 With all these information, we decided to choose Syna as our AI name which is derived from the word "synapse" that represents connection and communication. Our goal with Syna is to provide a reliable, secure, and intelligent tool that improves communication for everyone which will make conversations with deaf individuals more natural and meaningful.
 
 ## Related works
-1- SignAll AI: https://signall.world
-SignAll is an AI-powered platform that translates American Sign Language (ASL) into text or speech in real-time. It uses advanced hand and face tracking, along with contextual understanding, to ensure accurate translations and improve communication between deaf and hearing individuals. The platform aims to enhance accessibility and inclusivity for the deaf community.
+1. SignAll AI: https://signall.world
+SignAll is an AI-powered platform that translates American Sign Language (ASL) into text or speech in real-time. It uses advanced hand and face tracking, along with contextual understanding, to ensure accurate translations and improve communication between deaf and hearing individuals. 
+
+2. Deaf AI: https://www.deaf-ai.com
+Deaf AI uses machine learning to provide real-time sign language recognition and translation, enhancing communication and accessibility for the deaf community.
+
+## What our solution provides that is not in the mentioned sites:
+1. Real-time Cloud AI Feedback with Federated Learning
+2. Blockchain for Decentralized Task Assignment
+3. Privacy-Focused Data Handling with Decentralized Storage (IPFS)
+4. Speech Output Using Whisper-like AI for Real-time Speech Translation
+5. Supports both Arabic and English sign languages
+6. Emotion Recognition and Context Awareness
+
+## Roadmap:
