@@ -6,7 +6,7 @@ Your second friend that will help you communicate with your deaf friend, which u
 - Zainab Shaabneh
 
 ## Description
-As most communities consist of people with disablities, especially with deaf individuals, who can't hear or talk. While they use sign language to communicate with people, many can't understand them, and even if normal people learnt sign language, they may not understand deaf people's gestures, their ideas, and thoughts. This is our main problem and we want to study it by invloving AI model and application that will help both sides (deaf and normal persons). 
+As most communities consist of people with disablities, especially with deaf individuals, who can't hear or talk, while deaf individuals use sign language to communicate with people, many can't understand them, and even if normal people learnt sign language, they may not fully understand deaf people's gestures, their ideas, and thoughts. This is our main problem and we want to study it by invloving AI model and application that will help both sides (deaf and normal persons). 
 
 Our AI (Syna) bridges the gap by recognizing and translating sign language gestures into text and speech in real-time. It ensures that communication between deaf and hearing individuals becomes easier and more accessible.
 
