@@ -35,3 +35,10 @@ Deaf AI uses machine learning to provide real-time sign language recognition and
 7. Supports real-time and uploaded image/video inputs
 
 ## Roadmap:
+1. **Core Languages and Frameworks**: Use Python for back-end development with NoSQL databases to handle data and machine learning tasks efficiently.
+2. **Simple UI/UX Interface**: Design a clean, intuitive interface with frameworks like React or Vue.js to ensure easy user interaction.
+3. **Federated Learning on User Devices**: Implement federated learning to train models locally on devices while maintaining privacy.
+4. **AI Agents: P2P Decentralized AI Agents**: Enable AI agents to operate in a decentralized, peer-to-peer network for scalable, collaborative processing.
+5. **Task Assignment: Blockchain-based AI Task Marketplace**: Use blockchain to create a transparent, decentralized marketplace for AI task assignments and payments.
+6. **Data Storage: Videos Stored on IPFS or Arweave**: Store videos on decentralized platforms like IPFS or Arweave for secure, distributed access.
+
