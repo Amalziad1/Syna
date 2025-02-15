@@ -42,3 +42,5 @@ Deaf AI uses machine learning to provide real-time sign language recognition and
 5. **Task Assignment: Blockchain-based AI Task Marketplace**: Use blockchain to create a transparent, decentralized marketplace for AI task assignments and payments.
 6. **Data Storage: Videos Stored on IPFS or Arweave**: Store videos on decentralized platforms like IPFS or Arweave for secure, distributed access.
 
+## Presentation and Demo
+https://drive.google.com/file/d/157jMsR7vdJrcF7nXhYpvFkCz_aBYgt_5/view?usp=sharing
